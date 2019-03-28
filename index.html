@@ -7,8 +7,8 @@ src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
      e.preventDefault();
     $(document.body).animate({scrollTop: 0}, 800);
  });
-  $("button").click(function(){
-    $("img").animate({left: '150px'});
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
   });
 </script>
 <style>
@@ -17,6 +17,8 @@ src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
     text-align: center;
     background-color:#00BBFF;
     border: solid 1px #c3c3c3;
+    font-size:22px;
+    font-family:fantasy;
     }
 
     #panel {
