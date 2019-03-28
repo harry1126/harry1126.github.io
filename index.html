@@ -5,7 +5,7 @@ src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
 <script>
  $(document).ready(function(){
     $("#flip").click(function(){
-      $("#panel").slideToggle("slow");
+      $("#panel").slideToggle(4000);
   });
   $("#stop").click(function(){
     $("#panel").stop();
@@ -17,7 +17,7 @@ src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
 </script>
 <style>
     #go, #stop {
-    font-size:36px;
+    font-size:25px;
     font-family:fantasy;
     }
     #panel, #flip {
