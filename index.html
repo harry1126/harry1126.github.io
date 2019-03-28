@@ -10,13 +10,13 @@ src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
   $("#stop").click(function(){
     $("#panel").stop();
   });
-   $("button").click(function(){
+   $("#go").click(function(){
       $("p").toggle();
   });
 });
 </script>
 <style>
-    botton{
+    #go, #stop {
     font-size:36px;
     font-family:fantasy;
     }
@@ -71,7 +71,7 @@ src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
     <li>The first-one:</li>
      <center class="brown-text"><b>[飢餓遊戲]</b></center>
         <center><a href="https://www.youtube.com/channel/UCriy3vlLtiBov3nLdPLadUg"target="_blank"><img  src="http://new.ctv.com.tw/Cms_Data/Contents/CTV4/Media/820x360/hungry_820x360.jpg" title="可以點進去看看影片歐!"width="700"></a></center>
-  <button>隱藏/顯示</button>
+  <button id="go">隱藏/顯示</button>
   <p style="font-size:22px;"   class="green-text">播出地點:中視電視台</p>
   <div class="blue-background">
     <ol>
