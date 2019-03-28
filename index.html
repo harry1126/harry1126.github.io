@@ -3,9 +3,10 @@
 <script 
 src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
 <script>
-  $(document).ready(function() {
-
-  });
+ $('a.top').click(function (e) { 
+     e.preventDefault();
+    $(document.body).animate({scrollTop: 0}, 800);
+ });
 </script>
 <style>
     .orange-text {
@@ -84,6 +85,7 @@ src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
             <label for="dislike"style="font-size:30px;">不喜歡</label>
         <input type="submit" name="提交">
     </form>
+    <a class="top" href="#">Back to top</a>
     <div class="yellow-background">
     <center style="color:red">~謝謝大家的觀賞~</center>
 </body>
