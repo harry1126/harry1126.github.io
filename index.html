@@ -3,19 +3,22 @@
 <script 
 src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
 <script>
- $('a.top').click(function (e) { 
-    e.preventDefault();
-    $(document.body).animate({scrollTop: 0}, 800);
- });
  $(document).ready(function(){
     $("#flip").click(function(){
       $("#panel").slideToggle("slow");
+    $("button").click(function(){
+      $("").toggle();
+  });
   });
 });
 </script>
 <style>
+    botton{
+     font-size:36px;
+     font-family:fantasy;
+    }
     #panel, #flip {
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     background-color:#FFBB66;
     border: solid 1px #c3c3c3;
@@ -23,7 +26,7 @@ src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
     font-family:Microsoft JhengHei;
     }
     #panel {
-    padding: 26px;
+    padding: 36px;
     display: none;
     }
     .orange-text {
@@ -64,7 +67,8 @@ src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
     <li>The first-one:</li><button>Start Animation</button>
      <center class="brown-text"><b>[飢餓遊戲]</b></center>
         <center><a href="https://www.youtube.com/channel/UCriy3vlLtiBov3nLdPLadUg"target="_blank"><img  src="http://new.ctv.com.tw/Cms_Data/Contents/CTV4/Media/820x360/hungry_820x360.jpg" title="可以點進去看看影片歐!"width="700"></a></center>
-    <div class="blue-background">
+  <button>隱藏/顯示</button>
+  <div class="blue-background">
     <ol>
         <li>播出時間:每周日晚上八點</li>
         <li>主持人:孫協志、王仁甫、許孟哲</li>
