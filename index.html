@@ -3,6 +3,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
+    $("#adv").accordion({collapsible:true,active:false});
+    
     $("#flip").click(function(){
       $("#panel").slideToggle(3500);
   });
@@ -67,6 +69,11 @@ $(document).ready(function(){
  <button id="stop">停止</button>
   <div id="flip">Hello everyone!</div>
   <div id="panel" style="color:#FF3333;font-size:28px;">今天我要介紹喜歡的台灣綜藝節目排名!</div>
+    <div id="adv">
+	<h3>進階(選填)</h3>
+	<div>	內容1	</div>
+	<div>	內容2 </div>
+</div>
     <li>The first-one:</li>
      <center class="brown-text"><b>[飢餓遊戲]</b></center>
         <center><a href="https://www.youtube.com/channel/UCriy3vlLtiBov3nLdPLadUg"target="_blank"><img  src="http://new.ctv.com.tw/Cms_Data/Contents/CTV4/Media/820x360/hungry_820x360.jpg" title="可以點進去看看影片歐!"width="700"></a></center>
