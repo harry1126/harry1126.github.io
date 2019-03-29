@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link href="Content/themes/base/jquery.ui.all.css" rel="stylesheet" />
-<script src="Scripts/jquery-2.0.3.js"></script>
-<script src="Scripts/jquery-ui-1.10.3.js"></script>
 <script>
 $(document).ready(function(){
-  $("#accordion").accordion({ icons: '', heightStyle: 'fill' });
-    
   $("#flip").click(function(){
       $("#panel").slideToggle(3500);
   });
@@ -72,19 +67,6 @@ $(document).ready(function(){
  <button id="stop">停止</button>
   <div id="flip">Hello everyone!</div>
   <div id="panel" style="color:#FF3333;font-size:28px;">今天我要介紹喜歡的台灣綜藝節目排名!</div>
-<div class="ui-widget-content" style="width: 230px;">
-    <div id="accordion" style="height: 300px; width: 230px; overflow-x: auto;">
-        <h3>Group One</h3>
-        <div>
-            <ul class="itemlist">
-                <li>
-                    <asp:CheckBox ID="CheckBox1" runat="server" Text="有興趣" /></li>
-                <li>
-                    <asp:CheckBox ID="CheckBox2" runat="server" Text="沒興趣" /></li>
-            </ul>
-        </div>
-     </div>
- </div>
     <li>The first-one:</li>
      <center class="brown-text"><b>[飢餓遊戲]</b></center>
         <center><a href="https://www.youtube.com/channel/UCriy3vlLtiBov3nLdPLadUg"target="_blank"><img  src="http://new.ctv.com.tw/Cms_Data/Contents/CTV4/Media/820x360/hungry_820x360.jpg" title="可以點進去看看影片歐!"width="700"></a></center>
