@@ -6,8 +6,6 @@
 $(function(){
 	$("#adv").accordion({collapsible:true,active:false});});
 $(document).ready(function(){
-$(function(){
-	$("#adv").accordion({collapsible:true,active:false});});
     $("#flip").click(function(){
       $("#panel").slideToggle(3500);
   });
@@ -72,7 +70,7 @@ $(function(){
  <button id="stop">停止</button>
   <div id="flip">Hello everyone!</div>
   <div id="panel" style="color:#FF3333;font-size:28px;">今天我要介紹喜歡的台灣綜藝節目排名!</div>
-	<div id="adv">
+	<div id="adv" data-collapse>
 	<h3>進階(選填)</h3>
 	<div>	內容1	</div>
 	<div>	內容2	</div>
