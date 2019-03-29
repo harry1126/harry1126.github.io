@@ -11,7 +11,7 @@ $(document).ready(function(){
     }
   });
   $('.go').click(function(){
-    $('html, body').animate({scrollTop : 0},400);
+    $('html, body').animate({scrollTop : 0},800);
     return false;
   });
   $("#flip").click(function(){
@@ -27,17 +27,17 @@ $(document).ready(function(){
 </script>
 <style>
   .goTop{
-  padding:8px;
+  padding:10px;
   text-align:center;
-  background:#AAAAAA;
+  background:#CCCCFF;
   font-weight:bold;
-  color:#FFA488;
+  color:#FF0000;
   position:fixed;
   bottom:30px;
   right:30px;
 }
   .goTop:hover{
-  background:#FFA488;
+  background:#FFEE99;
 }
     #go, #stop {
     font-size:20px;
@@ -134,7 +134,7 @@ $(document).ready(function(){
             <label for="dislike"style="font-size:30px;">不喜歡</label>
         <input type="submit" name="提交">
     </form>
-    <center><a href="#" class="goTop">↑往上</a></center>
+    <a href="#" class="goTop">↑往上</a>
     <div class="yellow-background">
     <center style="color:red">~謝謝大家的觀賞~</center>
 </body>
