@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script>
 $(document).ready(function(){
-    $("#adv").accordion({collapsible:true,active:false});
-    
+$("#adv").accordion({collapsible:true,active:false});
     $("#flip").click(function(){
       $("#panel").slideToggle(3500);
   });
@@ -69,10 +70,10 @@ $(document).ready(function(){
  <button id="stop">停止</button>
   <div id="flip">Hello everyone!</div>
   <div id="panel" style="color:#FF3333;font-size:28px;">今天我要介紹喜歡的台灣綜藝節目排名!</div>
-    <div id="adv">
+	<div id="adv">
 	<h3>進階(選填)</h3>
 	<div>	內容1	</div>
-	<div>	內容2 </div>
+	<div>	內容2..	</div>
 </div>
     <li>The first-one:</li>
      <center class="brown-text"><b>[飢餓遊戲]</b></center>
