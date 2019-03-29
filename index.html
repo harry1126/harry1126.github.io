@@ -3,17 +3,12 @@
 <script 
 src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
 <script>
-  
+  $(function () {
+        $("#accordion").accordion({
+                heightStyle: "fill"
+        });
+});
  $(document).ready(function(){
-  // Close all panels 
-$('#accordion').find('.content').hide(); 
-// Accordion 
-$('#accordion').find('.accordion-header').click(function () { 
-   var next = $(this).next(); 
-   next.slideToggle('fast');       
-   $('.content').not(next).slideUp('fast'); 
-   return false; 
-  });
     $("#flip").click(function(){
       $("#panel").slideToggle(3500);
   });
@@ -25,6 +20,11 @@ $('#accordion').find('.accordion-header').click(function () {
   });
 });
 </script>
+  <style type="text/css">
+#accordion {
+    font-size: 50%;
+}
+</style>
 <style>
     #go, #stop {
     font-size:20px;
@@ -78,6 +78,18 @@ $('#accordion').find('.accordion-header').click(function () {
  <button id="stop">停止</button>
   <div id="flip">Hello everyone!</div>
   <div id="panel" style="color:#FF3333;font-size:28px;">今天我要介紹喜歡的台灣綜藝節目排名!</div>
+  <div style="height:250px">
+    <div id="accordion">
+        <h3>頁籤 1</h3>
+        <div>頁籤 1 內容</div>
+         
+        <h3>頁籤 2</h3>       
+        <div>頁籤 2 內容</div>
+         
+        <h3>頁籤 3</h3>
+        <div>頁籤 3 內容</div>
+    </div>
+</div>
     <li>The first-one:</li>
      <center class="brown-text"><b>[飢餓遊戲]</b></center>
         <center><a href="https://www.youtube.com/channel/UCriy3vlLtiBov3nLdPLadUg"target="_blank"><img  src="http://new.ctv.com.tw/Cms_Data/Contents/CTV4/Media/820x360/hungry_820x360.jpg" title="可以點進去看看影片歐!"width="700"></a></center>
