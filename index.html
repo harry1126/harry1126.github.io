@@ -4,14 +4,14 @@
 <script>
 $(document).ready(function(){
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 500) {
+    if ($(this).scrollTop() > 100) {
       $('.goTop').fadeIn();
     } else {
       $('.goTop').fadeOut();
     }
   });
   $('.go').click(function(){
-    $('html, body').animate({scrollTop : 0},1000);
+    $('html, body').animate({scrollTop : 0},300);
     return false;
   });
   $("#flip").click(function(){
@@ -32,8 +32,7 @@ $(document).ready(function(){
   background:#CCCCFF;
   font-weight:bold;
   color:#FF0000;
-  position: absolute;
-  left: 200px;
+  position:fixed;
   bottom:30px;
   right:30px;
 }
