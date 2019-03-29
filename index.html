@@ -3,10 +3,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $('a.top').click(function (e) { 
-     e.preventDefault();
-    $(document.body).animate({scrollTop: 40}, 800);
- });
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.scrollToTop').fadeIn();
+    } else {
+      $('.scrollToTop').fadeOut();
+    }
+  });
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},400);
+    return false;
+  });
   $("#flip").click(function(){
       $("#panel").slideToggle(3500);
   });
@@ -19,6 +26,22 @@ $(document).ready(function(){
 });
 </script>
 <style>
+  .scrollToTop{
+  padding:10px;
+  text-align:center;
+  background:WhiteSmoke;
+  font-weight:bold;
+  color:#555;
+  text-decoration:none;
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  display:none;
+}
+.scrollToTop:hover{
+  background:SkyBlue;
+  text-decoration:none;
+}
     #go, #stop {
     font-size:20px;
     font-family:fantasy;
@@ -114,7 +137,7 @@ $(document).ready(function(){
             <label for="dislike"style="font-size:30px;">不喜歡</label>
         <input type="submit" name="提交">
     </form>
-    <center><a class="top" href="#" style="font-size:25px;">Back to top-回到最上層</a></center>
+    <a href="#" class="scrollToTop">↑TOP</a>
     <div class="yellow-background">
     <center style="color:red">~謝謝大家的觀賞~</center>
 </body>
