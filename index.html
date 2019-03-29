@@ -3,7 +3,17 @@
 <script 
 src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script >
 <script>
+  
  $(document).ready(function(){
+  // Close all panels 
+$('#accordion').find('.content').hide(); 
+// Accordion 
+$('#accordion').find('.accordion-header').click(function () { 
+   var next = $(this).next(); 
+   next.slideToggle('fast');       
+   $('.content').not(next).slideUp('fast'); 
+   return false; 
+  });
     $("#flip").click(function(){
       $("#panel").slideToggle(3500);
   });
