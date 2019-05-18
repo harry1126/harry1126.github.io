@@ -26,6 +26,11 @@ $(document).ready(function(){
 });
 </script>
   <style>
+         /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
   .goTop{
   padding:10px;
   text-align:center;
@@ -137,18 +142,7 @@ $(document).ready(function(){
     <a href="#" class="goTop">↑GOTOP</a>
     <div class="yellow-background">
     <center style="color:red">~謝謝大家的觀賞~</center>
-</body>
-  <head>
-    <style>
-      /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }
-    </style>
-  </head>
-  <body>
-    <h3>My Google Maps Demo</h3>
+        <h3>My Google Maps Demo</h3>
     <!--The div element for the map -->
     <div id="map"></div>
     <script>
@@ -166,7 +160,7 @@ function initMap() {
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1XRXt2BJHrFzVK8GTGYhEwYNHMQEPXoc&callback=initMap">
     </script>
-  </body>
+</body>
 </html>
 
 
